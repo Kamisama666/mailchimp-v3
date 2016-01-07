@@ -31,7 +31,8 @@ mailchimp
   });
 ```
 
-In that example I am doing a request to 'lists', which is defined here: http://developer.mailchimp.com/documentation/mailchimp/reference/lists/#read-get_lists. To make a request to any of the API endpoints (http://developer.mailchimp.com/documentation/mailchimp/reference/overview/), simply pass in that endpoint (minus the leading slash).
+In that example I am doing a request to 'lists', which is defined here: http://developer.mailchimp.com/documentation/mailchimp/reference/lists/#read-get_lists.
+To make a request to any of the API endpoints (http://developer.mailchimp.com/documentation/mailchimp/reference/overview/), simply pass in that endpoint (minus the leading slash).
 
 To do a POST request, use the .post() method, with the second parameter being the data you want to pass. The object should be set up exactly as the endpoint will expect it to be.
 
