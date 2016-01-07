@@ -62,6 +62,8 @@ mailchimp
 
 To do a PUT request, use the .put() method, with the second parameter being the data you want to pass.
 
+To do a PATCH request, use the .put() method, with the second parameter being the data you want to pass.
+
 To do a DELETE request, use the .delete() method.
 
 
