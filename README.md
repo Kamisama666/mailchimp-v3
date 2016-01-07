@@ -15,7 +15,9 @@ This wrapper basically does all the busy work for you, so you can make basic req
 
 ```
 var mailchimp = require('mailchimp-v3');
+
 mailchimp.setApiKey('YOUR-API-KEY');
+
 mailchimp
   .get('lists')
   .then(function(lists){
