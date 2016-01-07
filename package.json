@@ -1,6 +1,6 @@
 {
   "name": "mailchimp-v3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Basic wrapper for MailChimp API V3.0 with some nice toppings",
   "main": "index.js",
   "author": "David Webber <david@recapture.io>",
