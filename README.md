@@ -160,7 +160,9 @@ batch
   });
 ```
 
-batch.add() can take either an array of operations, or a single operation. When you create a batch by calling createBatch(), you can optionally pass in a path and method so you don't have to define it for every single batch operation. If you pass in a path and method, you can set a different path or method for a specific batch operation if you need to.
+You do not need to JSON.stringify() the body using this method. The wrapper will do it for you, if what you pass in is not a string.
+
+batch.add() can take either an array of operations, or a single operation. When you create a batch by calling createBatch(), you can optionally pass in a path and method so you don't have to define it for every single batch operation. If you pass in a path and method, you can set a different path or method for a specific batch operation if you need to. 
 
 Full documentation is coming soon. Be glad I even put this on NPM bro.
 
