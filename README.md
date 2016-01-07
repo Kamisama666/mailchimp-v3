@@ -73,7 +73,7 @@ http://developer.mailchimp.com/documentation/mailchimp/reference/batches/
 
 V3 of the MailChimp API includes support for batches, which work really well. You can batch things two different ways with this wrapper:
 
-1: Do it the long way
+1: Use the default .post() method to pass the operations
 
 ```
 //to create some new merge fields in your list
@@ -117,7 +117,7 @@ mailchimp
 MailChimp requires the body of each operation be a string, thus the JSON.stringify();
 
 
-2: Do it the short way
+2: Use the batch object creator to simplify the process a bit
 
 ```
 //to susbcribe some unfortunate email addresses to your list
@@ -145,6 +145,12 @@ var batches = [
 
 batch
   .add(batches)
+  .add({
+    body: {
+      status        : 'subscribed',
+      email_address : 'joe@dirt.com'
+    }
+  })
   .send()
   .then(function(result){
     console.log(result);
