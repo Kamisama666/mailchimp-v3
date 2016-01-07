@@ -4,6 +4,7 @@
   "description": "Basic wrapper for MailChimp API V3.0 with some nice toppings",
   "main": "index.js",
   "author": "David Webber <david@recapture.io>",
+  "keywords" : ["mailchimp", "v3", "wrapper", "api", "mailchimp api", "mailchimp api v3"],
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.1.1",
