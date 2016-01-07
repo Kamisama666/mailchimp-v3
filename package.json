@@ -1,0 +1,13 @@
+{
+  "name": "mailchimp-v3",
+  "version": "1.0.0",
+  "description": "Basic wrapper for MailChimp API V3.0 with some nice toppings",
+  "main": "index.js",
+  "author": "David Webber <david@recapture.io>",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.1.1",
+    "superagent": "^1.6.1"
+  },
+  "repository" : {"type": "git", "url": "git://github.com/openexchangerates/accounting.js.git"},
+}
