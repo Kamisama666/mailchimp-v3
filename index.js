@@ -139,12 +139,14 @@ var Promise    = require('bluebird');
 
           if (error){
 
-            var returnError      = new Error(error.response.body.detail);
-            returnError.type     = error.response.body.type;
-            returnError.title    = error.response.body.title;
-            returnError.status   = error.response.body.status;
-            returnError.instance = error.response.body.instance;
-            returnError.errors   = error.response.body.errors;
+            var response         = error.response || {};
+            var responseBody     = response.body || {};
+            var returnError      = new Error(responseBody.detail || '');
+            returnError.type     = responseBody.type || '';
+            returnError.title    = responseBody.title || '';
+            returnError.status   = responseBody.status || '';
+            returnError.instance = responseBody.instance || '';
+            returnError.errors   = responseBody.errors || '';
 
             return reject(returnError);
           }
