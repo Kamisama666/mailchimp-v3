@@ -106,6 +106,9 @@ var Promise    = require('bluebird');
 
     if (!apiKey){
       apiKey = this.api_key;
+      if (!apiKey){
+        return Promise.reject(new Error('No API key set.'));
+      }
     }
 
     if (!method){
