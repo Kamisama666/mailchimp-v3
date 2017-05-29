@@ -2,6 +2,7 @@ Overview
 =============================================
 A NodeJS API client for [v3 of the MailChimp API](http://developer.mailchimp.com/documentation/mailchimp/reference/overview/). This is not an official package. There is no official package. Don't ask me why there isn't an official package.
 
+Forked from: [mailchimp-v3](https://bitbucket.org/recaptureio/mailchimp-v3)
 
 ###Usage
 This can be installed via our [npm package](https://npmjs.org/package/mailchimp-v3) using:
